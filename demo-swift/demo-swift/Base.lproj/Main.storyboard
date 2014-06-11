@@ -16,12 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Igor" borderStyle="roundedRect" placeholder="Enter your first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-rZ-YQN">
-                                <rect key="frame" x="36" y="61" width="244" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzy-rZ-YQN">
+                                <rect key="frame" x="36" y="61" width="407" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="284-Ta-FSL"/>
+                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkj-mf-8wX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" placeholder="company" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYN-JD-b1M">
+                                <rect key="frame" x="36" y="166" width="407" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="P2C-B9-A3P"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" placeholder="last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0FO-vL-vWB">
+                                <rect key="frame" x="36" y="114" width="407" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DTt-qS-7cY"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" placeholder="phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wg3-oN-LCj">
+                                <rect key="frame" x="36" y="220" width="407" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="njv-rP-0TY"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkj-mf-8wX">
                                 <rect key="frame" x="358" y="370" width="49" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,17 +57,40 @@
                                     <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bk3-Qi-tFJ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0a-TI-MAO">
+                                <rect key="frame" x="36" y="271" width="407" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="hTu-9u-6AA"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mYN-JD-b1M" secondAttribute="trailing" constant="25" id="9Hc-lZ-TAb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rkj-mf-8wX" secondAttribute="bottom" constant="80" id="Al1-Wj-afh"/>
+                            <constraint firstAttribute="trailing" secondItem="wg3-oN-LCj" secondAttribute="trailing" constant="25" id="CHr-gz-rb3"/>
+                            <constraint firstItem="fzy-rZ-YQN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="I7u-eZ-1LA"/>
+                            <constraint firstItem="0FO-vL-vWB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="LC2-YC-tbD"/>
+                            <constraint firstItem="wg3-oN-LCj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="VF9-QJ-hsL"/>
+                            <constraint firstItem="c0a-TI-MAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="hA2-IH-HKN"/>
+                            <constraint firstAttribute="trailing" secondItem="0FO-vL-vWB" secondAttribute="trailing" constant="25" id="pww-eG-weF"/>
                             <constraint firstAttribute="trailing" secondItem="Rkj-mf-8wX" secondAttribute="trailing" constant="73" id="rT8-TK-LBz"/>
+                            <constraint firstAttribute="trailing" secondItem="fzy-rZ-YQN" secondAttribute="trailing" constant="25" id="tkp-JW-m0v"/>
+                            <constraint firstAttribute="trailing" secondItem="c0a-TI-MAO" secondAttribute="trailing" constant="25" id="vyq-AA-uNi"/>
+                            <constraint firstItem="mYN-JD-b1M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="xMc-wV-45u"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <size key="freeformSize" width="480" height="480"/>
                     <connections>
-                        <outlet property="nameTextField" destination="fzy-rZ-YQN" id="6zl-LP-pgf"/>
+                        <outlet property="companyTextField" destination="mYN-JD-b1M" id="WCc-6Y-8IV"/>
+                        <outlet property="emailTextField" destination="c0a-TI-MAO" id="4Gl-dM-0Kg"/>
+                        <outlet property="firstNameTextField" destination="fzy-rZ-YQN" id="0Kk-1n-VHR"/>
+                        <outlet property="lastNameTextField" destination="0FO-vL-vWB" id="rZg-mD-0lS"/>
+                        <outlet property="pnoneTextField" destination="wg3-oN-LCj" id="Jts-yE-daI"/>
+                        <outlet property="submitButton" destination="Rkj-mf-8wX" id="IXY-lY-5bK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

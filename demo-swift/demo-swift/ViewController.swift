@@ -8,9 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, QBActionStatusDelegate {
+class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate {
     
-    @IBOutlet var nameTextField: UITextField
+    @IBOutlet var firstNameTextField: UITextField
+    @IBOutlet var lastNameTextField: UITextField
+    @IBOutlet var companyTextField: UITextField
+    @IBOutlet var pnoneTextField: UITextField
+    @IBOutlet var emailTextField: UITextField
+    //
+    @IBOutlet var submitButton: UIButton
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +35,25 @@ class ViewController: UIViewController, QBActionStatusDelegate {
     }
     
     @IBAction func submitButtonTapped(AnyObject) {
-        println(nameTextField.text)
-        
         let object = QBCOCustomObject()
         object.className = "BetaTesters"
-        object.fields["first_name"] = "Igor"
+        
+        println(firstNameTextField.text)
+        println(lastNameTextField.text)
+        println(companyTextField.text)
+        println(emailTextField.text)
+        println(pnoneTextField.text)
+        
+        var params = ["first_name": firstNameTextField.text,
+                      "last_name": lastNameTextField.text,
+                      "company": companyTextField.text,
+                      "email_address": emailTextField.text,
+                      "phone_number": pnoneTextField.text,
+                      "source": "Apps world app"].mutableCopy() as NSMutableDictionary
+        
+        
+        println(params)
+        object.fields = params
         //
         QBCustomObjects.createObject(object, delegate: self)
     }
@@ -42,13 +62,24 @@ class ViewController: UIViewController, QBActionStatusDelegate {
     // QuickBlox delegate
     //
     func completedWithResult(result: Result){
-        if result is QBCOCustomObjectResult && result.success{
-            let alert = UIAlertView()
-            alert.title = "Thanks!"
-            alert.message = "Your data was submited successfully"
-            alert.addButtonWithTitle("Ok")
-            alert.show()
+        if result is QBCOCustomObjectResult{
+            if result.success{
+                let alert = UIAlertView()
+                alert.title = "Thanks!"
+                alert.message = "Your data was submited successfully"
+                alert.addButtonWithTitle("Ok")
+                alert.show()
+            }
+        }else{
+            submitButton.enabled = true
         }
+    }
+    
+    // UITextFieldDelegate
+    //
+    func textFieldShouldReturn(textField: UITextField!) -> Bool{
+        textField.resignFirstResponder()
+        return true
     }
 }
 

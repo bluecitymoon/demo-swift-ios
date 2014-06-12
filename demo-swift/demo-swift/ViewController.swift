@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate {
     
-    @IBOutlet var label: UILabel
-    //
     @IBOutlet var firstNameTextField: UITextField
     @IBOutlet var lastNameTextField: UITextField
     @IBOutlet var companyTextField: UITextField
@@ -30,7 +28,6 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        label.text = "Qmunicate Beta Testers"
         questionLabel.text = "How are you planning to use Qmunicate?\n 1. \(questionAnswers[0])\n 2. \(questionAnswers[1])\n 3. \(questionAnswers[2])"
         
         let authRequest = QBASessionCreationRequest()

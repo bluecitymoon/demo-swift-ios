@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF6D02781948A7CE003BBF95 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D02771948A7CE003BBF95 /* Quickblox.framework */; };
-		BF6D027A1948B2FE003BBF95 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D02791948B2FE003BBF95 /* libz.1.2.5.dylib */; };
-		BF6D027C1948B310003BBF95 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D027B1948B310003BBF95 /* MobileCoreServices.framework */; };
-		BF6D027E1948B31F003BBF95 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D027D1948B31F003BBF95 /* SystemConfiguration.framework */; };
-		BF6D02801948B32F003BBF95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6D027F1948B32F003BBF95 /* Foundation.framework */; };
+		BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7392CA194A0C48004DB1F7 /* Foundation.framework */; };
 		BF8100BE19485E7B00D4E050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BD19485E7B00D4E050 /* AppDelegate.swift */; };
 		BF8100C019485E7B00D4E050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BF19485E7B00D4E050 /* ViewController.swift */; };
 		BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C119485E7B00D4E050 /* Main.storyboard */; };
 		BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C419485E7B00D4E050 /* Images.xcassets */; };
 		BF8100D119485E7B00D4E050 /* demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */; };
+		BFEFB41D1949ADCF008A5691 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB41C1949ADCF008A5691 /* Quickblox.framework */; };
+		BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */; };
+		BFEFB4231949B1EB008A5691 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEFB4221949B1EB008A5691 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +30,7 @@
 
 /* Begin PBXFileReference section */
 		BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		BF6D02771948A7CE003BBF95 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
-		BF6D02791948B2FE003BBF95 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		BF6D027B1948B310003BBF95 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		BF6D027D1948B31F003BBF95 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		BF6D027F1948B32F003BBF95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF7392CA194A0C48004DB1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8100B819485E7B00D4E050 /* demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100BC19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100BD19485E7B00D4E050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +40,9 @@
 		BF8100CA19485E7B00D4E050 /* demo-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100CF19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swiftTests.swift; sourceTree = "<group>"; };
+		BFEFB41C1949ADCF008A5691 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = "../../SDK-ios/Framework/build/Framework/Quickblox.framework"; sourceTree = "<group>"; };
+		BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		BFEFB4221949B1EB008A5691 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6D02801948B32F003BBF95 /* Foundation.framework in Frameworks */,
-				BF6D027E1948B31F003BBF95 /* SystemConfiguration.framework in Frameworks */,
-				BF6D027C1948B310003BBF95 /* MobileCoreServices.framework in Frameworks */,
-				BF6D027A1948B2FE003BBF95 /* libz.1.2.5.dylib in Frameworks */,
-				BF6D02781948A7CE003BBF95 /* Quickblox.framework in Frameworks */,
+				BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */,
+				BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */,
+				BFEFB41D1949ADCF008A5691 /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,15 +69,14 @@
 		BF8100AF19485E7B00D4E050 = {
 			isa = PBXGroup;
 			children = (
-				BF6D027F1948B32F003BBF95 /* Foundation.framework */,
-				BF6D027D1948B31F003BBF95 /* SystemConfiguration.framework */,
-				BF6D027B1948B310003BBF95 /* MobileCoreServices.framework */,
-				BF6D02791948B2FE003BBF95 /* libz.1.2.5.dylib */,
-				BF6D02771948A7CE003BBF95 /* Quickblox.framework */,
+				BFEFB4221949B1EB008A5691 /* icon.png */,
 				BF8100BA19485E7B00D4E050 /* demo-swift */,
 				BF8100CD19485E7B00D4E050 /* demo-swiftTests */,
 				BF8100B919485E7B00D4E050 /* Products */,
 				BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */,
+				BF7392CA194A0C48004DB1F7 /* Foundation.framework */,
+				BFEFB41C1949ADCF008A5691 /* Quickblox.framework */,
+				BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +208,7 @@
 			files = (
 				BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */,
 				BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */,
+				BFEFB4231949B1EB008A5691 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +352,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -377,10 +375,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

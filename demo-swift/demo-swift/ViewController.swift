@@ -18,13 +18,20 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     @IBOutlet var pnoneTextField: UITextField
     @IBOutlet var emailTextField: UITextField
     //
+    @IBOutlet var questionLabel: UILabel
+    //
+    @IBOutlet var questionSegment: UISegmentedControl
+    //
     @IBOutlet var submitButton: UIButton
+    
+    let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app", "To use it for my personal purposes"]
                             
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         label.text = "Qmunicate Beta Testers"
+        questionLabel.text = "How are you planning to use Qmunicate?\n 1. \(questionAnswers[0])\n 2. \(questionAnswers[1])\n 3. \(questionAnswers[2])"
         
         let authRequest = QBASessionCreationRequest()
         authRequest.userLogin = "JohnDoe";
@@ -47,6 +54,7 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
                       "company": companyTextField.text,
                       "email_address": emailTextField.text,
                       "phone_number": pnoneTextField.text,
+                      "reason": questionAnswers[questionSegment.selectedSegmentIndex],
                       "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
         
         

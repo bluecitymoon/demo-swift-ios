@@ -9,16 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate {
-    
-    @IBOutlet var firstNameTextField: UITextField
-    @IBOutlet var lastNameTextField: UITextField
-    @IBOutlet var companyTextField: UITextField
-    @IBOutlet var pnoneTextField: UITextField
-    @IBOutlet var emailTextField: UITextField
-    //
-    @IBOutlet var questionLabel: UILabel
-    //
-    @IBOutlet var questionSegment: UISegmentedControl
+
     //
     @IBOutlet var submitButton: UIButton
     
@@ -27,8 +18,6 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        questionLabel.text = "How are you planning to use Qmunicate?\n 1. \(questionAnswers[0])\n 2. \(questionAnswers[1])\n 3. \(questionAnswers[2])"
         
         let authRequest = QBASessionCreationRequest()
         authRequest.userLogin = "JohnDoe";
@@ -43,21 +32,21 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     }
     
     @IBAction func submitButtonTapped(AnyObject) {
-        let object = QBCOCustomObject()
-        object.className = "BetaTesters"
-        
-        var params = ["first_name": firstNameTextField.text,
-                      "last_name": lastNameTextField.text,
-                      "company": companyTextField.text,
-                      "email_address": emailTextField.text,
-                      "phone_number": pnoneTextField.text,
-                      "reason": questionAnswers[questionSegment.selectedSegmentIndex],
-                      "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
-        
-        
-        object.fields = params
-        //
-        QBCustomObjects.createObject(object, delegate: self)
+//        let object = QBCOCustomObject()
+//        object.className = "BetaTesters"
+//        
+//        var params = ["first_name": firstNameTextField.text,
+//                      "last_name": lastNameTextField.text,
+//                      "company": companyTextField.text,
+//                      "email_address": emailTextField.text,
+//                      "phone_number": pnoneTextField.text,
+//                      "reason": questionAnswers[questionSegment.selectedSegmentIndex],
+//                      "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
+//        
+//        
+//        object.fields = params
+//        //
+//        QBCustomObjects.createObject(object, delegate: self)
     }
     
     

@@ -15,7 +15,6 @@
 		BF8100D119485E7B00D4E050 /* demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */; };
 		BFEFB41D1949ADCF008A5691 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB41C1949ADCF008A5691 /* Quickblox.framework */; };
 		BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */; };
-		BFEFB4231949B1EB008A5691 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEFB4221949B1EB008A5691 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,6 @@
 		BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swiftTests.swift; sourceTree = "<group>"; };
 		BFEFB41C1949ADCF008A5691 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = "../../SDK-ios/Framework/build/Framework/Quickblox.framework"; sourceTree = "<group>"; };
 		BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		BFEFB4221949B1EB008A5691 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +67,6 @@
 		BF8100AF19485E7B00D4E050 = {
 			isa = PBXGroup;
 			children = (
-				BFEFB4221949B1EB008A5691 /* icon.png */,
 				BF8100BA19485E7B00D4E050 /* demo-swift */,
 				BF8100CD19485E7B00D4E050 /* demo-swiftTests */,
 				BF8100B919485E7B00D4E050 /* Products */,
@@ -208,7 +205,6 @@
 			files = (
 				BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */,
 				BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */,
-				BFEFB4231949B1EB008A5691 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

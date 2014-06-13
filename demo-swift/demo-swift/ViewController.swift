@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate {
+class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
 
     //
     @IBOutlet var submitButton: UIButton
     
     let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app", "To use it for my personal purposes"]
+    
+    let labels = [["First name", "Last name"], ["Company", "Phone", "Email"]]
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,11 +82,41 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         }
     }
     
+    
     // UITextFieldDelegate
     //
     func textFieldShouldReturn(textField: UITextField!) -> Bool{
         textField.resignFirstResponder()
         return true
+    }
+    
+    
+    // UITableViewDelegate
+    //
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){
+        tableView.deselectRowAtIndexPath(indexPath, animated: true);
+    }
+    
+    
+    // UITableViewDataSource
+    //
+    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int{
+        return section == 0 ? 2 : 3
+    }
+    
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
+        var cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCellIdentifier") as UITableViewCell
+        
+        if indexPath.section < 2{
+            let label = cell.viewWithTag(100201) as UILabel
+            label.text = labels[indexPath.section][indexPath.row]
+        }
+        
+        return cell
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+        return 3
     }
 }
 

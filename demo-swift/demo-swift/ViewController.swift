@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
 
-    //
     @IBOutlet var submitButton: UIButton
     
-    let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app", "To use it for my personal purposes"]
-    
     let labels = [["First name", "Last name"], ["Company", "Phone", "Email"]]
+    let placeholders = [["John", "Doe"], ["QuickBlox", "555-0121", "john@doe.com"]]
+    
+    let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app",
+        "To use it for my personal purposes"]
+    
+    var selectedAnswer = 0
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +98,16 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     //
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){
         tableView.deselectRowAtIndexPath(indexPath, animated: true);
+        
+        if indexPath.section == 2{
+            // check
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            
+            selectedAnswer = indexPath.row
+            
+            tableView.reloadData()
+        }
     }
     
     
@@ -105,11 +118,27 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     }
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
-        var cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCellIdentifier") as UITableViewCell
+        var cell: UITableViewCell
         
         if indexPath.section < 2{
-            let label = cell.viewWithTag(100201) as UILabel
-            label.text = labels[indexPath.section][indexPath.row]
+            cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCellIdentifier") as UITableViewCell
+
+            let cellLabel = cell.viewWithTag(100201) as UILabel
+            cellLabel.text = labels[indexPath.section][indexPath.row]
+            
+            let cellTextField = cell.viewWithTag(100202) as UITextField
+            cellTextField.placeholder = placeholders[indexPath.section][indexPath.row]
+        }else{
+            cell = tableView.dequeueReusableCellWithIdentifier("AnswerCellIdentifier") as UITableViewCell
+            
+            let cellLabel = cell.viewWithTag(100201) as UILabel
+            cellLabel.text = questionAnswers[indexPath.row]
+            
+            if selectedAnswer == indexPath.row{
+                cell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            }else{
+                cell.accessoryType = UITableViewCellAccessoryType.None
+            }
         }
         
         return cell
@@ -117,6 +146,10 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     
     func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
         return 3
+    }
+    
+    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
+        return section == 2 ? "How are you planning to use Qmunicate?" : String()
     }
 }
 

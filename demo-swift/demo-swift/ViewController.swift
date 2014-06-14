@@ -32,10 +32,11 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         //
         QBAuth.createSessionWithExtendedRequest(authRequest, delegate: self)
         
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
-        //
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+        if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone{
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
+            //
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -115,11 +116,15 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     // keyboard
     //
     func keyboardWillShow(){
-        
+        UIView.animateWithDuration(0.3, animations: {
+            self.questionsTableView.transform = CGAffineTransformMakeTranslation(0, -145)
+        })
     }
     
     func keyboardWillHide(){
-        
+        UIView.animateWithDuration(0.3, animations: {
+            self.questionsTableView.transform = CGAffineTransformIdentity
+        })
     }
     
     

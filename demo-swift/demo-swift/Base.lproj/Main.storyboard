@@ -52,7 +52,7 @@
                                 </variation>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-bF-t2n">
-                                <rect key="frame" x="0.0" y="402" width="768" height="572"/>
+                                <rect key="frame" x="0.0" y="364" width="768" height="610"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.93725496530532837" green="0.93725496530532837" blue="0.95686280727386475" alpha="1" colorSpace="deviceRGB"/>
                                 <prototypes>
@@ -277,7 +277,7 @@
                             <constraint firstItem="lI2-VQ-h0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="IjY-uS-6B6">
                                 <variation key="heightClass=regular-widthClass=compact" constant="70"/>
                             </constraint>
-                            <constraint firstItem="jOc-bF-t2n" firstAttribute="top" secondItem="Sz9-0l-6w4" secondAttribute="bottom" constant="38" id="UXE-kk-BPx"/>
+                            <constraint firstItem="jOc-bF-t2n" firstAttribute="top" secondItem="Sz9-0l-6w4" secondAttribute="bottom" id="UXE-kk-BPx"/>
                             <constraint firstItem="jOc-bF-t2n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y4k-Mu-LH6"/>
                             <constraint firstItem="VO2-DJ-VzX" firstAttribute="top" secondItem="lI2-VQ-h0g" secondAttribute="bottom" constant="5" id="aZS-WI-zSi">
                                 <variation key="heightClass=regular-widthClass=compact" constant="5"/>

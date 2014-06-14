@@ -32,7 +32,16 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         //
         QBAuth.createSessionWithExtendedRequest(authRequest, delegate: self)
         
-        submitButton.enabled = true
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
+        //
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        questionsTableView.flashScrollIndicators()
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,6 +109,17 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     func textFieldShouldReturn(textField: UITextField!) -> Bool{
         textField.resignFirstResponder()
         return true
+    }
+    
+    
+    // keyboard
+    //
+    func keyboardWillShow(){
+        
+    }
+    
+    func keyboardWillHide(){
+        
     }
     
     

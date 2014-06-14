@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424383358.161236"
+            timestampString = "424440716.589356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173">
+            startingLineNumber = "180"
+            endingLineNumber = "180">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424383358.161236"
+            timestampString = "424440716.589356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168">
+            startingLineNumber = "175"
+            endingLineNumber = "175">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -38,25 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424383358.161236"
+            timestampString = "424440716.589356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "demo-swift/ViewController.swift"
-            timestampString = "424383358.161236"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161">
+            startingLineNumber = "184"
+            endingLineNumber = "184">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

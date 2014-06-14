@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
 
+    @IBOutlet var topLabel: UILabel
+    @IBOutlet var topSublabel: UILabel
+    //
+    @IBOutlet var questionsTableView: UITableView
+    //
     @IBOutlet var submitButton: UIButton
-    
-    let labels = [["First name", "Last name"], ["Company", "Phone", "Email"]]
-    let placeholders = [["John", "Doe"], ["QuickBlox", "555-0121", "john@doe.com"]]
     
     let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app",
         "To use it for my personal purposes"]
@@ -29,6 +31,8 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         authRequest.userPassword = "Hello123";
         //
         QBAuth.createSessionWithExtendedRequest(authRequest, delegate: self)
+        
+        submitButton.enabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,21 +41,26 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     }
     
     @IBAction func submitButtonTapped(AnyObject) {
-//        let object = QBCOCustomObject()
-//        object.className = "BetaTesters"
-//        
-//        var params = ["first_name": firstNameTextField.text,
-//                      "last_name": lastNameTextField.text,
-//                      "company": companyTextField.text,
-//                      "email_address": emailTextField.text,
-//                      "phone_number": pnoneTextField.text,
-//                      "reason": questionAnswers[questionSegment.selectedSegmentIndex],
-//                      "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
-//        
-//        
-//        object.fields = params
-//        //
-//        QBCustomObjects.createObject(object, delegate: self)
+        let object = QBCOCustomObject()
+        object.className = "BetaTesters"
+        //
+        var firstNameTextField = questionsTableView.viewWithTag(100201) as UITextField
+        let lastNameTextField = questionsTableView.viewWithTag(100202) as UITextField
+        let companyTextField = questionsTableView.viewWithTag(100203) as UITextField
+        let phoneTextField = questionsTableView.viewWithTag(100204) as UITextField
+        let emailTextField = questionsTableView.viewWithTag(100205) as UITextField
+        
+        var params = ["first_name": firstNameTextField.text,
+                      "last_name": lastNameTextField.text,
+                      "company": companyTextField.text,
+                      "email_address": emailTextField.text,
+                      "phone_number": phoneTextField.text,
+                      "reason": questionAnswers[selectedAnswer],
+                      "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
+        
+        object.fields = params
+        //
+        QBCustomObjects.createObject(object, delegate: self)
     }
     
     
@@ -120,18 +129,25 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
         var cell: UITableViewCell
         
-        if indexPath.section < 2{
-            cell = tableView.dequeueReusableCellWithIdentifier("TextFieldCellIdentifier") as UITableViewCell
 
-            let cellLabel = cell.viewWithTag(100201) as UILabel
-            cellLabel.text = labels[indexPath.section][indexPath.row]
-            
-            let cellTextField = cell.viewWithTag(100202) as UITextField
-            cellTextField.placeholder = placeholders[indexPath.section][indexPath.row]
+        if indexPath.section == 0{
+            if indexPath.row == 0{
+                cell = tableView.dequeueReusableCellWithIdentifier("FirstNameCellIdentifier") as UITableViewCell
+            }else{
+                cell = tableView.dequeueReusableCellWithIdentifier("LastNameCellIdentifier") as UITableViewCell
+            }
+        }else if indexPath.section == 1{
+            if indexPath.row == 0{
+                cell = tableView.dequeueReusableCellWithIdentifier("CompanyCellIdentifier") as UITableViewCell
+            }else if indexPath.row == 1{
+                cell = tableView.dequeueReusableCellWithIdentifier("PhoneCellIdentifier") as UITableViewCell
+            }else {
+                cell = tableView.dequeueReusableCellWithIdentifier("EmailCellIdentifier") as UITableViewCell
+            }
         }else{
             cell = tableView.dequeueReusableCellWithIdentifier("AnswerCellIdentifier") as UITableViewCell
             
-            let cellLabel = cell.viewWithTag(100201) as UILabel
+            let cellLabel = cell.viewWithTag(100200) as UILabel
             cellLabel.text = questionAnswers[indexPath.row]
             
             if selectedAnswer == indexPath.row{

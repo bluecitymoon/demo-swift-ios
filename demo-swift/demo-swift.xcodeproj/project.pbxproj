@@ -19,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF1785D2194DDDA900BA8AC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8100B719485E7B00D4E050;
+			remoteInfo = "demo-swift";
+		};
 		BF8100CB19485E7B00D4E050 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
@@ -38,7 +45,7 @@
 		BF8100BF19485E7B00D4E050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8100C219485E7B00D4E050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8100C419485E7B00D4E050 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BF8100CA19485E7B00D4E050 /* demo-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Qmunicate.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100CF19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swiftTests.swift; sourceTree = "<group>"; };
 		BFEFB41C1949ADCF008A5691 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = "../../SDK-ios/Framework/build/Framework/Quickblox.framework"; sourceTree = "<group>"; };
@@ -83,7 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8100B819485E7B00D4E050 /* demo-swift.app */,
-				BF8100CA19485E7B00D4E050 /* demo-swiftTests.xctest */,
+				BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,10 +165,11 @@
 			);
 			dependencies = (
 				BF8100CC19485E7B00D4E050 /* PBXTargetDependency */,
+				BF1785D3194DDDA900BA8AC0 /* PBXTargetDependency */,
 			);
 			name = "demo-swiftTests";
 			productName = "demo-swiftTests";
-			productReference = BF8100CA19485E7B00D4E050 /* demo-swiftTests.xctest */;
+			productReference = BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -242,6 +250,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BF1785D3194DDDA900BA8AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8100B719485E7B00D4E050 /* demo-swift */;
+			targetProxy = BF1785D2194DDDA900BA8AC0 /* PBXContainerItemProxy */;
+		};
 		BF8100CC19485E7B00D4E050 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF8100B719485E7B00D4E050 /* demo-swift */;
@@ -360,7 +373,7 @@
 					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "C6E1DA29-58CA-41B9-95FC-F50C5054F2B1";
@@ -384,7 +397,7 @@
 					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "81C4942A-69D0-4C17-BB61-885A4D4116D3";
@@ -408,7 +421,7 @@
 				INFOPLIST_FILE = "demo-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Qmunicate";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -424,7 +437,7 @@
 				INFOPLIST_FILE = "demo-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Qmunicate";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;

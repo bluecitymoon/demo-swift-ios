@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BF8100B719485E7B00D4E050"
-               BuildableName = "demo-swift.app"
+               BuildableName = "Test Qmunicate.app"
                BlueprintName = "demo-swift"
                ReferencedContainer = "container:demo-swift.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BF8100C919485E7B00D4E050"
-               BuildableName = "demo-swiftTests.xctest"
+               BuildableName = "Test Qmunicate.xctest"
                BlueprintName = "demo-swiftTests"
                ReferencedContainer = "container:demo-swift.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BF8100B719485E7B00D4E050"
-            BuildableName = "demo-swift.app"
+            BuildableName = "Test Qmunicate.app"
             BlueprintName = "demo-swift"
             ReferencedContainer = "container:demo-swift.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugXPCServices = "NO"
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BF8100B719485E7B00D4E050"
-            BuildableName = "demo-swift.app"
+            BuildableName = "Test Qmunicate.app"
             BlueprintName = "demo-swift"
             ReferencedContainer = "container:demo-swift.xcodeproj">
          </BuildableReference>
@@ -81,7 +81,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BF8100B719485E7B00D4E050"
-            BuildableName = "demo-swift.app"
+            BuildableName = "Test Qmunicate.app"
             BlueprintName = "demo-swift"
             ReferencedContainer = "container:demo-swift.xcodeproj">
          </BuildableReference>

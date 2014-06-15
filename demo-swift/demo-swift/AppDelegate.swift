@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Set QuickBlox credentials (You must create application in admin.quickblox.com)
         //
-        QBSettings.setApplicationID(9136);
-        QBSettings.setAuthorizationKey("c85p9dW5-6ruAjv");
-        QBSettings.setAuthorizationSecret("yHYcTHATQm7rDpr");
-        QBSettings.setAccountKey("z8AmKyAz9TrCwXxNatjn");
+        QBSettings.setApplicationID(11185);
+        QBSettings.setAuthorizationKey("dnxvnVPskKuSwxK");
+        QBSettings.setAuthorizationSecret("gVbmyNmQLsyJF58");
+        QBSettings.setAccountKey("7yvNe17TnjNUqDoPwfqp");
         
         return true
     }

@@ -21,6 +21,10 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     
     let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app",
         "To use it for my personal purposes"]
+    let lastSectionLabel = "How are you planning to use Qmunicate?"
+    let source = "Apps world app"
+    let topLabelText = "Test Qmunicate"
+    let tobSublabelText = "Sign up to try Qmunicate for iOS & Android"
     
     var selectedAnswer = 0
                             
@@ -32,8 +36,8 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         logo.image = image
         
         // set top labels
-        topLabel.text = "Test Qmunicate"
-        topSublabel.text = "Sign up to try Qmunicate for iOS & Android"
+        topLabel.text = topLabelText
+        topSublabel.text = tobSublabelText
 
         // handle keyboard on iPhone
         if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone{
@@ -96,7 +100,7 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
                       "email_address": emailTextField.text,
                       "phone_number": phoneTextField.text,
                       "reason": questionAnswers[selectedAnswer],
-                      "source": "Apps world app"].bridgeToObjectiveC() as NSMutableDictionary
+                      "source": source].bridgeToObjectiveC() as NSMutableDictionary
         
         object.fields = params
         //
@@ -220,7 +224,7 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     }
     
     func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
-        return section == 2 ? "How are you planning to use Qmunicate?" : String()
+        return section == 2 ? lastSectionLabel : ""
     }
 }
 

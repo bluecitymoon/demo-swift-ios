@@ -26,6 +26,13 @@
 			remoteGlobalIDString = BF8100B719485E7B00D4E050;
 			remoteInfo = "demo-swift";
 		};
+		BF1785D4194DDDA900BA8AC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8100B719485E7B00D4E050;
+			remoteInfo = "demo-swift";
+		};
 		BF8100CB19485E7B00D4E050 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
@@ -39,7 +46,7 @@
 		BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmlogo2.png; sourceTree = "<group>"; };
 		BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF7392CA194A0C48004DB1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		BF8100B819485E7B00D4E050 /* demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8100B819485E7B00D4E050 /* Test Qmunicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Qmunicate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100BC19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100BD19485E7B00D4E050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF8100BF19485E7B00D4E050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +96,7 @@
 		BF8100B919485E7B00D4E050 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF8100B819485E7B00D4E050 /* demo-swift.app */,
+				BF8100B819485E7B00D4E050 /* Test Qmunicate.app */,
 				BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */,
 			);
 			name = Products;
@@ -150,7 +157,7 @@
 			);
 			name = "demo-swift";
 			productName = "demo-swift";
-			productReference = BF8100B819485E7B00D4E050 /* demo-swift.app */;
+			productReference = BF8100B819485E7B00D4E050 /* Test Qmunicate.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BF8100C919485E7B00D4E050 /* demo-swiftTests */ = {
@@ -166,6 +173,7 @@
 			dependencies = (
 				BF8100CC19485E7B00D4E050 /* PBXTargetDependency */,
 				BF1785D3194DDDA900BA8AC0 /* PBXTargetDependency */,
+				BF1785D5194DDDA900BA8AC0 /* PBXTargetDependency */,
 			);
 			name = "demo-swiftTests";
 			productName = "demo-swiftTests";
@@ -254,6 +262,11 @@
 			isa = PBXTargetDependency;
 			target = BF8100B719485E7B00D4E050 /* demo-swift */;
 			targetProxy = BF1785D2194DDDA900BA8AC0 /* PBXContainerItemProxy */;
+		};
+		BF1785D5194DDDA900BA8AC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8100B719485E7B00D4E050 /* demo-swift */;
+			targetProxy = BF1785D4194DDDA900BA8AC0 /* PBXContainerItemProxy */;
 		};
 		BF8100CC19485E7B00D4E050 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -375,7 +388,7 @@
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Qmunicate";
 				PROVISIONING_PROFILE = "C6E1DA29-58CA-41B9-95FC-F50C5054F2B1";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";
@@ -399,7 +412,7 @@
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Test Qmunicate";
 				PROVISIONING_PROFILE = "81C4942A-69D0-4C17-BB61-885A4D4116D3";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";

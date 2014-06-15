@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1785D1194DBB8400BA8AC0 /* qmlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */; };
 		BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7392CA194A0C48004DB1F7 /* Foundation.framework */; };
 		BF8100BE19485E7B00D4E050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BD19485E7B00D4E050 /* AppDelegate.swift */; };
 		BF8100C019485E7B00D4E050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BF19485E7B00D4E050 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmlogo2.png; sourceTree = "<group>"; };
 		BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF7392CA194A0C48004DB1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8100B819485E7B00D4E050 /* demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				BF8100BF19485E7B00D4E050 /* ViewController.swift */,
 				BF8100C119485E7B00D4E050 /* Main.storyboard */,
 				BF8100C419485E7B00D4E050 /* Images.xcassets */,
+				BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */,
 				BF8100BB19485E7B00D4E050 /* Supporting Files */,
 			);
 			path = "demo-swift";
@@ -205,6 +208,7 @@
 			files = (
 				BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */,
 				BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */,
+				BF1785D1194DBB8400BA8AC0 /* qmlogo2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taras Filatov (6AVH4TA956)";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,6 +363,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "C6E1DA29-58CA-41B9-95FC-F50C5054F2B1";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -371,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,6 +387,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81C4942A-69D0-4C17-BB61-885A4D4116D3";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";
 			};

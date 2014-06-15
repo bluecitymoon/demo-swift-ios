@@ -13,6 +13,8 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     @IBOutlet var topLabel: UILabel
     @IBOutlet var topSublabel: UILabel
     //
+    @IBOutlet var logo: UIImageView
+    //
     @IBOutlet var questionsTableView: UITableView
     //
     @IBOutlet var submitButton: UIButton
@@ -24,18 +26,46 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // set logo (by some reason it doesn't show a logo from Images.xcassets on device)
+        let image = UIImage(named: "qmlogo2.png");
+        logo.image = image
         
+        // set top labels
+        topLabel.text = "Test Qmunicate"
+        topSublabel.text = "Sign up to try Qmunicate for iOS & Android"
+
+        // handle keyboard on iPhone
+        if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone{
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
+            //
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+        }
+        
+        // Create QuickBlox session
+        //
         let authRequest = QBASessionCreationRequest()
         authRequest.userLogin = "JohnDoe";
         authRequest.userPassword = "Hello123";
         //
         QBAuth.createSessionWithExtendedRequest(authRequest, delegate: self)
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
         
-        if UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Phone{
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow", name: UIKeyboardWillShowNotification, object: nil)
+        // clear textfields by shake event
+        if motion == UIEventSubtype.MotionShake{
+            var firstNameTextField = questionsTableView.viewWithTag(100201) as UITextField
+            let lastNameTextField = questionsTableView.viewWithTag(100202) as UITextField
+            let companyTextField = questionsTableView.viewWithTag(100203) as UITextField
+            let phoneTextField = questionsTableView.viewWithTag(100204) as UITextField
+            let emailTextField = questionsTableView.viewWithTag(100205) as UITextField
             //
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide", name: UIKeyboardWillHideNotification, object: nil)
+            firstNameTextField.text = ""
+            lastNameTextField.text = ""
+            companyTextField.text = ""
+            phoneTextField.text = ""
+            emailTextField.text = ""
         }
     }
     

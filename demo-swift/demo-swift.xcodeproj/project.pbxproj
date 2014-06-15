@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BF1785D1194DBB8400BA8AC0 /* qmlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */; };
+		BF4E0446194E063700CE345E /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4E0445194E063700CE345E /* Quickblox.framework */; };
 		BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7392CA194A0C48004DB1F7 /* Foundation.framework */; };
 		BF8100BE19485E7B00D4E050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BD19485E7B00D4E050 /* AppDelegate.swift */; };
 		BF8100C019485E7B00D4E050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BF19485E7B00D4E050 /* ViewController.swift */; };
 		BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C119485E7B00D4E050 /* Main.storyboard */; };
 		BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C419485E7B00D4E050 /* Images.xcassets */; };
 		BF8100D119485E7B00D4E050 /* demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */; };
-		BFEFB41D1949ADCF008A5691 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB41C1949ADCF008A5691 /* Quickblox.framework */; };
 		BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmlogo2.png; sourceTree = "<group>"; };
+		BF4E0445194E063700CE345E /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
 		BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF7392CA194A0C48004DB1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8100B819485E7B00D4E050 /* Test Qmunicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Qmunicate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +56,6 @@
 		BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Qmunicate.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100CF19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swiftTests.swift; sourceTree = "<group>"; };
-		BFEFB41C1949ADCF008A5691 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = "../../SDK-ios/Framework/build/Framework/Quickblox.framework"; sourceTree = "<group>"; };
 		BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 			files = (
 				BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */,
 				BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */,
-				BFEFB41D1949ADCF008A5691 /* Quickblox.framework in Frameworks */,
+				BF4E0446194E063700CE345E /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +87,8 @@
 				BF8100CD19485E7B00D4E050 /* demo-swiftTests */,
 				BF8100B919485E7B00D4E050 /* Products */,
 				BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */,
+				BF4E0445194E063700CE345E /* Quickblox.framework */,
 				BF7392CA194A0C48004DB1F7 /* Foundation.framework */,
-				BFEFB41C1949ADCF008A5691 /* Quickblox.framework */,
 				BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */,
 			);
 			sourceTree = "<group>";
@@ -383,7 +383,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -407,7 +406,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/igorkhomenko/workspace/SDK-ios/Framework/build/Framework",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;

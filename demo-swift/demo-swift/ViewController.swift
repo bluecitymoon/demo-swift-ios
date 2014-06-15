@@ -21,10 +21,10 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
     
     let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app",
         "To use it for my personal purposes"]
-    let lastSectionLabel = "How are you planning to use Qmunicate?"
-    let source = "Apps world app"
-    let topLabelText = "Test Qmunicate"
-    let tobSublabelText = "Sign up to try Qmunicate for iOS & Android"
+    let lastSectionLabel = "How are you planning to use QuickBlox with Swift?"
+    let source = "Swift demo"
+    let topLabelText = "QuickBlox and Swift"
+    let tobSublabelText = "Feedback form"
     
     var selectedAnswer = 0
                             
@@ -34,6 +34,8 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         // set logo (by some reason it doesn't show a logo from Images.xcassets on device)
         let image = UIImage(named: "qmlogo2.png");
         logo.image = image
+        
+        self.navigationItem.title = "QuickBlox"
         
         // set top labels
         topLabel.text = topLabelText

@@ -7,7 +7,7 @@
         <!--View Controller - Qmunicate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Qmunicate" id="BYZ-38-t0r" customClass="ViewController" customModule="demo_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Qmunicate" id="BYZ-38-t0r" customClass="ViewController" customModule="Test_Qmunicate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -277,9 +277,7 @@
                             <constraint firstItem="lI2-VQ-h0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="IjY-uS-6B6">
                                 <variation key="heightClass=regular-widthClass=compact" constant="70"/>
                             </constraint>
-                            <constraint firstItem="jOc-bF-t2n" firstAttribute="top" secondItem="Sz9-0l-6w4" secondAttribute="bottom" constant="20" id="UXE-kk-BPx">
-                                <variation key="heightClass=regular-widthClass=compact"/>
-                            </constraint>
+                            <constraint firstItem="jOc-bF-t2n" firstAttribute="top" secondItem="Sz9-0l-6w4" secondAttribute="bottom" constant="20" id="UXE-kk-BPx"/>
                             <constraint firstItem="jOc-bF-t2n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y4k-Mu-LH6"/>
                             <constraint firstItem="VO2-DJ-VzX" firstAttribute="top" secondItem="lI2-VQ-h0g" secondAttribute="bottom" constant="5" id="aZS-WI-zSi">
                                 <variation key="heightClass=regular-widthClass=compact" constant="5"/>
@@ -292,9 +290,8 @@
                             <constraint firstItem="Sz9-0l-6w4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-80" id="xkD-tH-Omc"/>
                             <constraint firstItem="Sz9-0l-6w4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="zMx-Dt-dwL"/>
                         </constraints>
-                        <variation key="heightClass=regular-widthClass=compact"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Qmunicate" id="Xkq-8o-Z6U"/>
+                    <navigationItem key="navigationItem" title="Application" id="Xkq-8o-Z6U"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

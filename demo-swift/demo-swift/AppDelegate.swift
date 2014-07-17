@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         QBSettings.setAuthorizationKey("dnxvnVPskKuSwxK");
         QBSettings.setAuthorizationSecret("gVbmyNmQLsyJF58");
         QBSettings.setAccountKey("7yvNe17TnjNUqDoPwfqp");
-        
+
         return true
     }
 

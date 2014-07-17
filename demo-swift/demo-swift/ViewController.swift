@@ -37,6 +37,7 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         
         self.navigationItem.title = "QuickBlox"
         
+        
         // set top labels
         topLabel.text = topLabelText
         topSublabel.text = tobSublabelText

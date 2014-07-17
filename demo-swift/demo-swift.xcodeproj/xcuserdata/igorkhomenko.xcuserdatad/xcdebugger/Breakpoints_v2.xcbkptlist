@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424543530.400164"
+            timestampString = "425324929.32484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241">
+            startingLineNumber = "247"
+            endingLineNumber = "247">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424543530.400164"
+            timestampString = "425324929.32484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236">
+            startingLineNumber = "242"
+            endingLineNumber = "242">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -38,11 +38,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "demo-swift/ViewController.swift"
-            timestampString = "424543530.400164"
+            timestampString = "425324929.32484"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245">
+            startingLineNumber = "251"
+            endingLineNumber = "251">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

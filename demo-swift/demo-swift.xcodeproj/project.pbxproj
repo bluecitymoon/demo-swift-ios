@@ -14,33 +14,8 @@
 		BF8100C019485E7B00D4E050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BF19485E7B00D4E050 /* ViewController.swift */; };
 		BF8100C319485E7B00D4E050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C119485E7B00D4E050 /* Main.storyboard */; };
 		BF8100C519485E7B00D4E050 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8100C419485E7B00D4E050 /* Images.xcassets */; };
-		BF8100D119485E7B00D4E050 /* demo_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */; };
 		BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BF1785D2194DDDA900BA8AC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF8100B719485E7B00D4E050;
-			remoteInfo = "demo-swift";
-		};
-		BF1785D4194DDDA900BA8AC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF8100B719485E7B00D4E050;
-			remoteInfo = "demo-swift";
-		};
-		BF8100CB19485E7B00D4E050 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BF8100B019485E7B00D4E050 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BF8100B719485E7B00D4E050;
-			remoteInfo = "demo-swift";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmlogo2.png; sourceTree = "<group>"; };
@@ -53,7 +28,6 @@
 		BF8100BF19485E7B00D4E050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8100C219485E7B00D4E050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8100C419485E7B00D4E050 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Qmunicate.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8100CF19485E7B00D4E050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8100D019485E7B00D4E050 /* demo_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swiftTests.swift; sourceTree = "<group>"; };
 		BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
@@ -67,13 +41,6 @@
 				BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */,
 				BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */,
 				BF4E0446194E063700CE345E /* Quickblox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BF8100C719485E7B00D4E050 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				BF8100B819485E7B00D4E050 /* Test Qmunicate.app */,
-				BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,26 +126,6 @@
 			productReference = BF8100B819485E7B00D4E050 /* Test Qmunicate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BF8100C919485E7B00D4E050 /* demo-swiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BF8100D719485E7B00D4E050 /* Build configuration list for PBXNativeTarget "demo-swiftTests" */;
-			buildPhases = (
-				BF8100C619485E7B00D4E050 /* Sources */,
-				BF8100C719485E7B00D4E050 /* Frameworks */,
-				BF8100C819485E7B00D4E050 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BF8100CC19485E7B00D4E050 /* PBXTargetDependency */,
-				BF1785D3194DDDA900BA8AC0 /* PBXTargetDependency */,
-				BF1785D5194DDDA900BA8AC0 /* PBXTargetDependency */,
-			);
-			name = "demo-swiftTests";
-			productName = "demo-swiftTests";
-			productReference = BF8100CA19485E7B00D4E050 /* Test Qmunicate.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +137,7 @@
 				TargetAttributes = {
 					BF8100B719485E7B00D4E050 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					BF8100C919485E7B00D4E050 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = BF8100B719485E7B00D4E050;
+						DevelopmentTeam = 8885H5G2YX;
 					};
 				};
 			};
@@ -212,7 +155,6 @@
 			projectRoot = "";
 			targets = (
 				BF8100B719485E7B00D4E050 /* demo-swift */,
-				BF8100C919485E7B00D4E050 /* demo-swiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,13 +170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF8100C819485E7B00D4E050 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,33 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF8100C619485E7B00D4E050 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BF8100D119485E7B00D4E050 /* demo_swiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BF1785D3194DDDA900BA8AC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF8100B719485E7B00D4E050 /* demo-swift */;
-			targetProxy = BF1785D2194DDDA900BA8AC0 /* PBXContainerItemProxy */;
-		};
-		BF1785D5194DDDA900BA8AC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF8100B719485E7B00D4E050 /* demo-swift */;
-			targetProxy = BF1785D4194DDDA900BA8AC0 /* PBXContainerItemProxy */;
-		};
-		BF8100CC19485E7B00D4E050 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BF8100B719485E7B00D4E050 /* demo-swift */;
-			targetProxy = BF8100CB19485E7B00D4E050 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BF8100C119485E7B00D4E050 /* Main.storyboard */ = {
@@ -305,7 +214,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -322,10 +231,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "8383DC05-B387-4DF3-8E94-9E15503B33C7";
 				SDKROOT = iphoneos8.0;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -351,7 +261,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -362,9 +272,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "8383DC05-B387-4DF3-8E94-9E15503B33C7";
 				SDKROOT = iphoneos8.0;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,16 +290,17 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Taras Filatov (6AVH4TA956)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taras Filatov (6AVH4TA956)";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Test Qmunicate";
-				PROVISIONING_PROFILE = "C6E1DA29-58CA-41B9-95FC-F50C5054F2B1";
+				PROVISIONING_PROFILE = "7C10F44D-9DA6-469F-92B5-FEA785098661";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -401,55 +313,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Injoit LTD (8885H5G2YX)";
 				DEFINES_MODULE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Test Qmunicate";
-				PROVISIONING_PROFILE = "81C4942A-69D0-4C17-BB61-885A4D4116D3";
+				PROVISIONING_PROFILE = "8383DC05-B387-4DF3-8E94-9E15503B33C7";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "demo-swift-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		BF8100D819485E7B00D4E050 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/demo-swift.app/demo-swift";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "demo-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "Test Qmunicate";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		BF8100D919485E7B00D4E050 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/demo-swift.app/demo-swift";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "demo-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "Test Qmunicate";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
 		};
@@ -470,15 +348,6 @@
 			buildConfigurations = (
 				BF8100D519485E7B00D4E050 /* Debug */,
 				BF8100D619485E7B00D4E050 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BF8100D719485E7B00D4E050 /* Build configuration list for PBXNativeTarget "demo-swiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BF8100D819485E7B00D4E050 /* Debug */,
-				BF8100D919485E7B00D4E050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

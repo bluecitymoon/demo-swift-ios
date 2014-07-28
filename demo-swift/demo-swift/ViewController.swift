@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
 
-    @IBOutlet var topLabel: UILabel
-    @IBOutlet var topSublabel: UILabel
+    @IBOutlet var topLabel: UILabel!
+    @IBOutlet var topSublabel: UILabel!
     //
-    @IBOutlet var logo: UIImageView
+    @IBOutlet var logo: UIImageView!
     //
-    @IBOutlet var questionsTableView: UITableView
+    @IBOutlet var questionsTableView: UITableView!
     //
-    @IBOutlet var submitButton: UIButton
+    @IBOutlet var submitButton: UIButton!
     
     let questionAnswers = ["To integrate it to my app", "To integrate it to my client's app",
         "To use it for my personal purposes"]

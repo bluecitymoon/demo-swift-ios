@@ -51,11 +51,18 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
         
         // Create QuickBlox session
         //
-        let authRequest = QBASessionCreationRequest()
-        authRequest.userLogin = "JohnDoe";
-        authRequest.userPassword = "Hello123";
-        //
-        QBAuth.createSessionWithExtendedRequest(authRequest, delegate: self)
+        let sessionParameters = QBSessionParameters();
+        sessionParameters.userLogin = "JohnDoe";
+        sessionParameters.userPassword = "Hello123";
+        
+        QBRequest.createSessionWithExtendedParameters(sessionParameters, successBlock: {
+            (response: QBResponse!, session: QBASession!) -> Void in
+                NSLog("session: %@", session);
+                self.submitButton.enabled = true
+            
+            }, errorBlock: { (response: QBResponse!) -> Void in
+                NSLog("error: %@", response.error);
+            });
     }
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent!) {
@@ -103,42 +110,23 @@ class ViewController: UIViewController, QBActionStatusDelegate, UITextFieldDeleg
                       "email_address": emailTextField.text,
                       "phone_number": phoneTextField.text,
                       "reason": questionAnswers[selectedAnswer],
-                      "source": source].bridgeToObjectiveC() as NSMutableDictionary
+                      "source": source] as NSMutableDictionary
         
         object.fields = params
         //
-        QBCustomObjects.createObject(object, delegate: self)
-    }
-    
-    
-    // QuickBlox delegate
-    //
-    func completedWithResult(result: Result){
-        if result is QBCOCustomObjectResult{
-            if result.success{
+        QBRequest.createObject(object, successBlock: {
+            (response: QBResponse!, object: QBCOCustomObject!) -> Void in
+                NSLog("object: %@", object);
+            
                 let alert = UIAlertView()
                 alert.title = "Thanks!"
                 alert.message = "Your data was submited successfully"
                 alert.addButtonWithTitle("Ok")
                 alert.show()
-            }else{
-                let alert = UIAlertView()
-                alert.title = "Error"
-                alert.message = result.errors.description
-                alert.addButtonWithTitle("Ok")
-                alert.show()
-            }
-        }else if result is QBAAuthSessionCreationResult{
-            if result.success{
-                submitButton.enabled = true
-            }else{
-                let alert = UIAlertView()
-                alert.title = "Error"
-                alert.message = result.errors.description
-                alert.addButtonWithTitle("Ok")
-                alert.show()
-            }
-        }
+            
+            }, errorBlock: { (response: QBResponse!) -> Void in
+                NSLog("error: %@", response.error);
+            });
     }
     
     

@@ -7,5 +7,7 @@
 @import SystemConfiguration;
 @import MobileCoreServices;
 
+#import <Quickblox/QBRequest+QBAuth.h>
 #import <Quickblox/Quickblox.h>
+
 

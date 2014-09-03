@@ -7,8 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8682C4CD19B07B1100C01281 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4CC19B07B1100C01281 /* Quickblox.framework */; };
+		8682C4D119B07BB700C01281 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4D019B07BB700C01281 /* CFNetwork.framework */; };
+		8682C4D319B07BC100C01281 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4D219B07BC100C01281 /* SystemConfiguration.framework */; };
+		8682C4D519B07BCD00C01281 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4D419B07BCD00C01281 /* MobileCoreServices.framework */; };
+		8682C4D719B07BD700C01281 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4D619B07BD700C01281 /* CoreGraphics.framework */; };
+		8682C4D919B07BE100C01281 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4D819B07BE100C01281 /* CoreLocation.framework */; };
+		8682C4DB19B07BE700C01281 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4DA19B07BE700C01281 /* CoreData.framework */; };
+		8682C4DD19B07BED00C01281 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4DC19B07BED00C01281 /* AudioToolbox.framework */; };
+		8682C4DF19B07BF300C01281 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4DE19B07BF300C01281 /* CoreMedia.framework */; };
+		8682C4E119B07BFA00C01281 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4E019B07BF900C01281 /* Accelerate.framework */; };
+		8682C4E319B07C0000C01281 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4E219B07C0000C01281 /* CoreVideo.framework */; };
+		8682C4E519B07C0600C01281 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4E419B07C0600C01281 /* AVFoundation.framework */; };
+		8682C4E719B07C0B00C01281 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4E619B07C0B00C01281 /* QuartzCore.framework */; };
+		8682C4E919B07C1100C01281 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4E819B07C1100C01281 /* Security.framework */; };
+		8682C4EB19B07C1700C01281 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4EA19B07C1700C01281 /* libz.dylib */; };
+		8682C4ED19B07C1E00C01281 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4EC19B07C1E00C01281 /* libresolv.dylib */; };
+		8682C4EF19B07C2600C01281 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8682C4EE19B07C2500C01281 /* libxml2.dylib */; };
 		BF1785D1194DBB8400BA8AC0 /* qmlogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */; };
-		BF4E0446194E063700CE345E /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4E0445194E063700CE345E /* Quickblox.framework */; };
 		BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7392CA194A0C48004DB1F7 /* Foundation.framework */; };
 		BF8100BE19485E7B00D4E050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BD19485E7B00D4E050 /* AppDelegate.swift */; };
 		BF8100C019485E7B00D4E050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8100BF19485E7B00D4E050 /* ViewController.swift */; };
@@ -18,8 +34,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8682C4CC19B07B1100C01281 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
+		8682C4D019B07BB700C01281 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8682C4D219B07BC100C01281 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8682C4D419B07BCD00C01281 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8682C4D619B07BD700C01281 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8682C4D819B07BE100C01281 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8682C4DA19B07BE700C01281 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8682C4DC19B07BED00C01281 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8682C4DE19B07BF300C01281 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8682C4E019B07BF900C01281 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		8682C4E219B07C0000C01281 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8682C4E419B07C0600C01281 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8682C4E619B07C0B00C01281 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8682C4E819B07C1100C01281 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8682C4EA19B07C1700C01281 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8682C4EC19B07C1E00C01281 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		8682C4EE19B07C2500C01281 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF1785D0194DBB8400BA8AC0 /* qmlogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qmlogo2.png; sourceTree = "<group>"; };
-		BF4E0445194E063700CE345E /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
 		BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		BF7392CA194A0C48004DB1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8100B819485E7B00D4E050 /* Test Qmunicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Qmunicate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,23 +70,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8682C4EF19B07C2600C01281 /* libxml2.dylib in Frameworks */,
+				8682C4ED19B07C1E00C01281 /* libresolv.dylib in Frameworks */,
+				8682C4EB19B07C1700C01281 /* libz.dylib in Frameworks */,
+				8682C4E919B07C1100C01281 /* Security.framework in Frameworks */,
+				8682C4E719B07C0B00C01281 /* QuartzCore.framework in Frameworks */,
+				8682C4E519B07C0600C01281 /* AVFoundation.framework in Frameworks */,
+				8682C4E319B07C0000C01281 /* CoreVideo.framework in Frameworks */,
+				8682C4E119B07BFA00C01281 /* Accelerate.framework in Frameworks */,
+				8682C4DF19B07BF300C01281 /* CoreMedia.framework in Frameworks */,
+				8682C4DD19B07BED00C01281 /* AudioToolbox.framework in Frameworks */,
+				8682C4DB19B07BE700C01281 /* CoreData.framework in Frameworks */,
+				8682C4D919B07BE100C01281 /* CoreLocation.framework in Frameworks */,
+				8682C4D719B07BD700C01281 /* CoreGraphics.framework in Frameworks */,
+				8682C4D519B07BCD00C01281 /* MobileCoreServices.framework in Frameworks */,
+				8682C4D319B07BC100C01281 /* SystemConfiguration.framework in Frameworks */,
+				8682C4D119B07BB700C01281 /* CFNetwork.framework in Frameworks */,
 				BF7392CB194A0C48004DB1F7 /* Foundation.framework in Frameworks */,
 				BFEFB4211949AEDD008A5691 /* libz.1.2.5.dylib in Frameworks */,
-				BF4E0446194E063700CE345E /* Quickblox.framework in Frameworks */,
+				8682C4CD19B07B1100C01281 /* Quickblox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8682C4F019B07CBE00C01281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8682C4EE19B07C2500C01281 /* libxml2.dylib */,
+				8682C4EC19B07C1E00C01281 /* libresolv.dylib */,
+				8682C4EA19B07C1700C01281 /* libz.dylib */,
+				8682C4E819B07C1100C01281 /* Security.framework */,
+				8682C4E619B07C0B00C01281 /* QuartzCore.framework */,
+				8682C4E419B07C0600C01281 /* AVFoundation.framework */,
+				8682C4E219B07C0000C01281 /* CoreVideo.framework */,
+				8682C4E019B07BF900C01281 /* Accelerate.framework */,
+				8682C4DE19B07BF300C01281 /* CoreMedia.framework */,
+				8682C4DC19B07BED00C01281 /* AudioToolbox.framework */,
+				8682C4DA19B07BE700C01281 /* CoreData.framework */,
+				8682C4D819B07BE100C01281 /* CoreLocation.framework */,
+				8682C4D619B07BD700C01281 /* CoreGraphics.framework */,
+				8682C4D419B07BCD00C01281 /* MobileCoreServices.framework */,
+				8682C4D219B07BC100C01281 /* SystemConfiguration.framework */,
+				8682C4D019B07BB700C01281 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF8100AF19485E7B00D4E050 = {
 			isa = PBXGroup;
 			children = (
+				8682C4F019B07CBE00C01281 /* Frameworks */,
 				BF8100BA19485E7B00D4E050 /* demo-swift */,
 				BF8100CD19485E7B00D4E050 /* demo-swiftTests */,
 				BF8100B919485E7B00D4E050 /* Products */,
+				8682C4CC19B07B1100C01281 /* Quickblox.framework */,
 				BF6D02721948659E003BBF95 /* demo-swift-Bridging-Header.h */,
-				BF4E0445194E063700CE345E /* Quickblox.framework */,
 				BF7392CA194A0C48004DB1F7 /* Foundation.framework */,
 				BFEFB4201949AEDD008A5691 /* libz.1.2.5.dylib */,
 			);
@@ -296,9 +368,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "Test Qmunicate";
 				PROVISIONING_PROFILE = "7C10F44D-9DA6-469F-92B5-FEA785098661";
 				SDKROOT = iphoneos;
@@ -321,9 +403,19 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta4.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "demo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-lstdc++",
+				);
 				PRODUCT_NAME = "Test Qmunicate";
 				PROVISIONING_PROFILE = "8383DC05-B387-4DF3-8E94-9E15503B33C7";
 				SDKROOT = iphoneos;
